@@ -1,0 +1,188 @@
+
+	@import url('https://fonts.googleapis.com/css?family=Nunito:300,400|Quicksand');
+
+	body{
+		font-family: 'Quicksand', sans-serif;
+		font-size:20px;
+	}
+
+	.container-fluid{
+	 	margin:0;
+	 	padding:0;
+	 }
+
+	.header{
+		height: 500px;
+		width: 100%;
+		background:black;
+	}
+
+	.title{
+		text-align: center;
+		color:white;
+		font-size: 50px;
+	}
+
+	.subtitle{
+		text-align: center;
+		font-size:30px;
+		color:white;
+		margin-bottom: 40px;
+	}
+
+	.boutonun{
+		text-align: center;
+		color:white;
+	}
+
+	.boutondeux{
+		text-align: center;
+		color:white;
+	}
+	
+	.bandeaux-rouges{
+		height: 200px;
+		background:rgb(255,42,3);
+		line-height: 200px;
+		width:100%;
+
+	}
+
+	.bandeaux-gris{
+		height: 200px;
+		width: 100%;
+		background:rgb(89,89,89);
+		line-height: 200px;
+	}
+
+	#theevent{
+		text-align: center;
+		vertical-align: middle;
+		color:white;
+	}
+
+	#blocevenement{
+		text-align: center;
+		color:white;
+		padding: 5%;
+		background-image: url(img/fondevent.jpg);
+		background-size: cover;
+	}
+
+	#partners{
+		text-align: center;
+		vertical-align: middle;
+		color:white;
+	}
+
+	#theteam{
+		text-align: center;
+		vertical-align: middle;
+		color:white;
+	}
+
+	.minititle{
+		margin-bottom: 50px;
+		margin-top: 50px;
+		font-weight: bold;
+	}
+
+	.btn:hover{
+		background-color:rgb(255,42,3);
+ 		color:white;
+	}
+
+	 .carousel-block {
+	 	position: relative;
+	 } 
+
+	 .header {
+	 	position: absolute;
+	 	width: 100%;
+	 	height: 100%;
+	 	top: 0;
+	 	right: 0;
+	 	z-index: 10;
+	 	background-color: rgb(0, 0, 0);
+	 	background-color: rgba(0, 0, 0, 0.5);
+	 }
+
+	 #headertext{
+	 	position: absolute;
+	 	width: 100%;
+	 	height: 100%;
+	 	top: 30%;
+	 	right: 0;
+	 	z-index: 10;
+	 }
+
+	.copyright{
+		font-size: 12px;
+		color:white;
+		text-align: right;
+		padding:5%;
+	}
+
+	footer{
+		height: 200px;
+		background-color:black;
+		padding: auto;
+	}
+
+	#bloclequipe{
+		background-image:url(img/theteam.jpg);
+		background-size: cover;
+		padding: 5%;
+	}
+	.names{
+		text-align: center;
+		color:white;
+		margin-bottom: 0;
+
+	}
+	.posts{
+		text-align: center;
+		color:white;
+		font-size: 
+	}
+	.people-img{
+		text-align: center;
+	}
+
+	#about{
+		text-align: center;
+		vertical-align: middle;
+		color:white;
+	}
+
+
+	 #blocabout{
+	 	position: relative;
+		text-align: center;
+		color:white;
+		background-image:url(img/abouttedx.jpg);
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		padding:5%;
+	}
+
+	#blocpartners{
+		background-image: url(img/partners.jpg);
+		background-size:cover;
+	}
+
+	#googlemaps{
+		padding-left:5%;
+		padding-right:5%;
+	}
+
+.card{
+	margin: 5%;
+	color:black;
+}
+
+.card-deck{
+	padding: 1%;
+}
+
