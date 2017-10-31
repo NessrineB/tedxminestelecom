@@ -248,8 +248,9 @@
 			<div id="lead-organizer" class="col-sm">
 				<div class="people-img">
 					<a href="https://www.linkedin.com/in/nessrine-berrama/">
-						<img src="img/nessrine.png" width="140">
+						<img src="img/nessrine.png" width="160">
 					</a>
+					<div class="item-overlay top"></div>
 				</div>
 				<p class="names"> Nessrine </p>
 				<p class="posts"> Lead organizer </p>
@@ -257,7 +258,7 @@
 			<div id="sponsorship-manager-mathilde" class="col-sm">
 				<div class="people-img">
 					<a href="https://www.linkedin.com/in/mathilde-oms-etienney-97b26275/">
-						<img src="img/mathilde.png" width="140"> 
+						<img src="img/mathilde.png" width="160"> 
 					</a>
 				</div>
 				<p class="names"> Mathilde </p>
@@ -266,7 +267,7 @@
 			<div id="sponsorship-manager-alexandre" class="col-sm">
 				<div class="people-img">
 					<a href="https://www.linkedin.com/in/alexandrevouillon/">
-						<img src="img/alexandre.png" width="140">
+						<img src="img/alexandre.png" width="160">
 					</a>
 				</div>
 				<p class="names"> Alexandre </p>
@@ -275,7 +276,7 @@
 			<div id="Speaker-manager-megane" class="col-sm">
 					<div class="people-img">
 						<a href="https://www.linkedin.com/in/m%C3%A9gane-chopin-4b0220a5/">
-							<img src="img/megane.png" width="140"> 
+							<img src="img/megane.png" width="160"> 
 						</a>
 					</div>
 					<p class="names"> Mégane </p>
@@ -284,7 +285,7 @@
 			<div id="Speaker-manager-audrey" class="col-sm">
 					<div class="people-img">
 						<a href="https://www.linkedin.com/in/audrey-garcia-37b51411a/">
-							<img src="img/audrey.png" width="140"> 
+							<img src="img/audrey.png" width="160"> 
 						</a>
 					</div>
 					<p class="names"> Audrey </p>
@@ -293,17 +294,17 @@
 			<div id="com-manager" class="col-sm">
 					<div class="people-img">
 						<a href="https://www.linkedin.com/in/estellebache/">
-							<img src="img/estelle.png" width="140" >
+							<img src="img/estelle.png" width="160" >
 						</a>
 					</div>
 					<p class="names"> Estelle </p>
-					<p class="posts"> Communication manager </p>
+					<p class="posts"> Comms manager </p>
 			</div>
 
 			<div id="web-manager" class="col-sm">
 					<div class="people-img">
 						<a href="https://www.linkedin.com/in/myriam-el-hounihi-dehaudt/">
-							<img src="img/myriam.png" width="140">
+							<img src="img/myriam.png" width="160">
 						</a>
 					</div>
 					<p class="names"> Myriam </p>
@@ -312,7 +313,7 @@
 			<div id="ed-manager" class="col-sm">
 					<div class="people-img">
 						<a href="https://www.linkedin.com/in/mariedeseille/">
-							<img src="img/marie.png" width="140">
+							<img src="img/marie.png" width="160">
 						</a>
 					</div>
 					<p class="names"> Marie </p>
@@ -328,28 +329,36 @@
 
 	<div id="blocpartners" class="row">
 		<div class="col-sm">
-			<p class="names"> Institut Mines Télécom </p> 
-			<a href="img/logoimt.png">
-				<img src="https://www.imt.fr/wp-content/uploads/2016/09/IMT_rvb-01-1030x728.jpg" width="400">
-			</a>
+			<p class="names"> IMT </p> 
+				<div class="partners-img">
+					<a href="https://www.imt.fr/">
+						<img src="img/logoimt.png" width="200">
+					</a>
+				</div>
 		</div>
 		<div class="col-sm">
 			<p class="names"> Wavestone </p>
-			<a href="img/logowavestone.png">
-				<img src="https://pbs.twimg.com/profile_images/751469319779942400/8DAoQAzp.jpg" width="200">
-			</a>
+			<div class="partners-img">
+				<a href="https://www.wavestone.com/fr/">
+					<img src="img/logowavestone.png" width="200">
+				</a>
+			</div>
 		</div>
 		<div class="col-sm">
 			<p class="names"> Microsoft </p>
-			<a href="img/logomicrosoft.png">
-				<img src="https://fontmeme.com/images/Microsoft-Logo.jpg" width="200"> 
-			</a>
+			<div class="partners-img">
+				<a href="https://www.microsoft.com/en-gb/">
+					<img src="img/logomicrosoft.png" width="200"> 
+				</a>
+			</div>
 		</div>
 		<div class="col-sm">
 			<p class="names"> Oracle </p>
-			<a href="https://www.oracle.com/fr/index.html">
-				<img src="http://1.bp.blogspot.com/-h6y7mVBcRIg/VEfjcVB6b6I/AAAAAAAAF7g/MIDp7DtpiNw/s1600/Logo%2BOracle.png" width="200">
-			</a>
+			<div class="partners-img">
+				<a href="https://www.oracle.com/fr/index.html">
+					<img src="img/logooracle.png" width="200">
+				</a>
+			</div>
 		</div>
 
 	</div>
@@ -400,7 +409,7 @@
 		var the_id = $(this).attr("href");
 
 		$('html, body').animate({
-			scrollTop:$(the_id).offset().top
+			scrollTop:$(the_id).offset().top - 100
 		}, 'slow');
 		return false;
 	});
