@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="robots" content="noindex, nofollow">
         <title>Accueil</title>
     </head>
 
@@ -30,7 +31,7 @@
 
 	<header>
 		<!-- Navigation bar -->
-			<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: black">
 	  			<a class="navbar-brand" href="#"><img src="img/tedxlogo.jpg" alt="tedx logo" width="200"></a>
 	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    			<span class="navbar-toggler-icon"></span>
@@ -39,12 +40,12 @@
 	  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    			<ul class="navbar-nav mr-auto">
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="#texte"> Home </a>
+	        				<a class="nav-link" href="#home"> Home </a>
 	      				</li>
 
 	      				<li class="nav-item dropdown">
 	        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> The event </a>
-	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
 	          					<a class="dropdown-item" href="#theme">Theme</a>
 	          					<a class="dropdown-item" href="#talks">Talks</a>
 	          					<div class="dropdown-divider"></div>
@@ -71,7 +72,7 @@
 
 
 		<!--header -->
-		<div class="carousel-block">
+		<div class="carousel-block" id="home">
 			<!-- Texte header -->
 			<div class="header">
 				<div id="headertext">
@@ -79,7 +80,7 @@
 					<p class="subtitle"> - L'ère de rien - </p>
 					<p class="boutonun">
 						<a href="#theevent"> 
-							<button type="button" class="btn btn-outline-light"> Learn more about the event</button> 
+							<button type="button" class="btn btn-outline-light"> Learn more about the event </button> 
 						</a>
 					</p>
 					<p class="boutondeux"> 
@@ -200,7 +201,7 @@
 		    <div class="card">
 		      <div class="card-body">
 		        <h4 class="card-title">Regular price - 15 euros</h4>
-		        <a href="#" class="btn btn-outline-dark">Buy your ticket now!</a>
+		        <a href="http://www.digitick.com/fr/" class="btn btn-outline-dark">Buy your ticket now!</a>
 		      </div>
 		    </div>
 		  </div>
@@ -208,7 +209,7 @@
 		    <div class="card">
 		      <div class="card-body">
 		        <h4 class="card-title">Student price - 10 euros</h4>
-		        <a href="#" class="btn btn-outline-dark">Buy your ticket now!</a>
+		        <a href="http://www.digitick.com/fr/" class="btn btn-outline-dark">Buy your ticket now!</a>
 		      </div>
 		    </div>
 		  </div>
@@ -240,8 +241,8 @@
 
 	<!-- Organigramme de l'équipe -->
 
-	<div class="bandeaux-rouges"> 
-		<p id="theteam"> The team </p>
+	<div class="bandeaux-rouges" id="theteam"> 
+		<p> The team </p>
 	</div>
 	<div id="bloclequipe" class="row">
 			<div id="lead-organizer" class="col-sm">
@@ -326,21 +327,29 @@
 	</div>
 
 	<div id="blocpartners" class="row">
-		<div id="imt" class="col-sm">
+		<div class="col-sm">
 			<p class="names"> Institut Mines Télécom </p> 
-			<img src="https://www.imt.fr/wp-content/uploads/2016/09/IMT_rvb-01-1030x728.jpg" width="200">
+			<a href="img/logoimt.png">
+				<img src="https://www.imt.fr/wp-content/uploads/2016/09/IMT_rvb-01-1030x728.jpg" width="400">
+			</a>
 		</div>
-		<div id="wavestone" class="col-sm">
+		<div class="col-sm">
 			<p class="names"> Wavestone </p>
+			<a href="img/logowavestone.png">
 				<img src="https://pbs.twimg.com/profile_images/751469319779942400/8DAoQAzp.jpg" width="200">
+			</a>
 		</div>
-		<div id="microsoft" class="col-sm">
+		<div class="col-sm">
 			<p class="names"> Microsoft </p>
+			<a href="img/logomicrosoft.png">
 				<img src="https://fontmeme.com/images/Microsoft-Logo.jpg" width="200"> 
+			</a>
 		</div>
-		<div id="oracle" class="col-sm">
+		<div class="col-sm">
 			<p class="names"> Oracle </p>
+			<a href="https://www.oracle.com/fr/index.html">
 				<img src="http://1.bp.blogspot.com/-h6y7mVBcRIg/VEfjcVB6b6I/AAAAAAAAF7g/MIDp7DtpiNw/s1600/Logo%2BOracle.png" width="200">
+			</a>
 		</div>
 
 	</div>
@@ -358,7 +367,7 @@
 		<p> 
 			<br></br>
 			<button type="button" class="btn btn-outline-light"> 
-				<a href="https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/what-is-a-tedx-event">Learn more about TEDx Events. </a>
+				<a id="boutonlearn" href="https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/what-is-a-tedx-event"> Learn more about TEDx Events. </a>
 			</button>
 		</p>
 	</div>
@@ -382,6 +391,20 @@
 		$('.carousel').carousel({
 			interval: 2500
 		})
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	$('a[href^="#"]').click(function(){
+		var the_id = $(this).attr("href");
+
+		$('html, body').animate({
+			scrollTop:$(the_id).offset().top
+		}, 'slow');
+		return false;
+	});
+
 	</script>
 
 
