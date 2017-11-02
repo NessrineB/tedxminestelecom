@@ -303,7 +303,7 @@
 		}
 
 		.carousel-block{
-			height: 100%;
+			top:50px;
 		}
 
 	}
@@ -340,7 +340,7 @@
 		}
 
 		.carousel-block{
-			height: 100%;
+			top:50px;
 		}
 	}
 
@@ -377,7 +377,7 @@
 		}
 
 		.carousel-block{
-			height: 100%;
+			top:50px;
 		}
 
 
