@@ -295,6 +295,10 @@
 			width:100px;
 		}
 
+		.header{
+			height: 700px;
+		}
+
 	}
 
 	/* Small devices (landscape phones, 576px and up) */
@@ -322,6 +326,10 @@
 
 		#tedxlogo{
 			width:100px;
+		}
+
+		.header{
+			height: 700px;
 		}
 	}
 
@@ -351,6 +359,10 @@
 
 		#tedxlogo{
 			width:100px;
+		}
+
+		.header{
+			height: 700px;
 		}
 
 	}
