@@ -1,73 +1,6 @@
+/*GENERAL*/
 
-<<<<<<< HEAD
-
-=======
->>>>>>> gh-pages
 	@import url('https://fonts.googleapis.com/css?family=Nunito:300,400|Quicksand');
-
-	/* Extra small devices (portrait phones, less than 576px) */
-	@media (max-width: 575px) {
-		body{
-			font-size: 9px;
-		}
-
-		.title{
-			font-size:9px;
-		}
-
-		.subtitle{
-			font-size:9px;
-			margin-bottom: 0px;
-		}
-
-			.bandeaux-rouges{
-		height: 50px;
-			}
-
-	}
-
-	/* Small devices (landscape phones, 576px and up) */
-	@media (min-width: 576px) and (max-width: 767px) {
-		body{
-			font-size: 9px;
-		}
-
-		.title{
-			font-size:9px;
-		}
-
-		.subtitle{
-			font-size:9px;
-		}
-
-			.bandeaux-rouges{
-		height: 50px;
-			}
-	}
-
-	/* Medium devices (tablets, 768px and up) */
-	@media (min-width: 768px) and (max-width: 991px) { 
-		body{
-			font-size: 9px;
-		}
-
-		.title{
-			font-size:9px;
-		}
-
-		.subtitle{
-			font-size:9px;
-		}
-
-			.bandeaux-rouges{
-		height: 50px;
-			}
-	}
-
-
-
-
-
 
 	body{
 		font-family: 'Quicksand', sans-serif;
@@ -84,12 +17,35 @@
 	 	margin-right:0;
 	 }
 
+	 /*NAVBAR*/
+
+	#tedxlogo{
+		width:200px;
+	}
+
+	/*HEADER*/
+
 	.header{
-		height: 500px;
-		width: 100%;
 		background:black;
 		background-size: cover;
+		position: absolute;
+	 	width: 100%;
+	 	height: 100%;
+	 	top: 0;
+	 	right: 0;
+	 	z-index: 10;
+	 	background-color: rgb(0, 0, 0);
+	 	background-color: rgba(0, 0, 0, 0.5);
 	}
+
+	 #headertext{
+	 	position: absolute;
+	 	width: 100%;
+	 	height: 100%;
+	 	top: 30%;
+	 	right: 0;
+	 	z-index: 10;
+	 }
 
 	.title{
 		text-align: center;
@@ -113,6 +69,17 @@
 		text-align: center;
 		color:white;
 	}
+
+	.btn:hover{
+		background-color:rgb(255,42,3);
+ 		color:white;
+	}
+
+	 .carousel-block {
+	 	position: relative;
+	 } 
+
+	/*TITRES SECTIONS */
 	
 	.bandeaux-rouges{
 		height: 200px;
@@ -121,6 +88,8 @@
 		width:100%;
 		background-size: cover;
 	}
+
+	/* SECTION EVENEMENT */
 
 	#theevent{
 		text-align: center;
@@ -144,11 +113,12 @@
 		padding: 1%;
 	}
 
-	#partners{
-		text-align: center;
-		vertical-align: middle;
-		color:white;
+	#googlemaps{
+		padding-left:5%;
+		padding-right:5%;
 	}
+
+	/*SECTION TEAM */
 
 	#theteam{
 		text-align: center;
@@ -162,54 +132,12 @@
 		font-weight: bold;
 	}
 
-	.btn:hover{
-		background-color:rgb(255,42,3);
- 		color:white;
-	}
-
-	 .carousel-block {
-	 	position: relative;
-	 } 
-
-	 .header {
-	 	position: absolute;
-	 	width: 100%;
-	 	height: 100%;
-	 	top: 0;
-	 	right: 0;
-	 	z-index: 10;
-	 	background-color: rgb(0, 0, 0);
-	 	background-color: rgba(0, 0, 0, 0.5);
-	 }
-
-	 #headertext{
-	 	position: absolute;
-	 	width: 100%;
-	 	height: 100%;
-	 	top: 30%;
-	 	right: 0;
-	 	z-index: 10;
-	 }
-
-	.copyright{
-		font-size: 12px;
-		color:white;
-		position:absolute;
-		bottom:0%;
-		right:2%;
-	}
-
-	footer{
-		height: 200px;
-		background-color:black;
-		position: relative;
-	}
-
 	#bloclequipe{
 		background-image:url(img/theteam.jpg);
 		background-size: cover;
 		padding: 5%;
 	}
+
 	.names{
 		text-align: center;
 		color:white;
@@ -225,30 +153,65 @@
 		text-align: center;
 	}
 
-	.people-img:hover{
-
-	}
-
 	.col-sm{
 		text-align: center;
 	}
 
-	#about{
+	* {
+		 -moz-box-sizing: border-box;
+		 -webkit-box-sizing: border-box;
+		 box-sizing: border-box;
+		 margin: 0;
+		 padding: 0;
+	}
+
+	.people-img {
+		position: relative;
+		border: 0px;
+		margin: 2%;
+		overflow: hidden;
+	}
+
+	.people-img img {
+		padding:7%;
+		max-width: 100%;
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.people-img:hover img {
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+	/*SECTION PARTNERS*/
+
+	#partners{
 		text-align: center;
 		vertical-align: middle;
 		color:white;
 	}
 
+	.partners-img {
+		position: relative;
+		border: 0px;
+		margin: 2%;
+		overflow: hidden;
+	}
 
-	 #blocabout{
-	 	position: relative;
-		text-align: center;
-		color:white;
-		background-image:url(img/abouttedx.jpg);
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		padding:5%;
+	.partners-img img {
+		padding:7%;
+		max-width: 100%;
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.partners-img:hover img {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
 	}
 
 	#blocpartners{
@@ -261,58 +224,134 @@
 		text-align: center;
 	}
 
-	#googlemaps{
-		padding-left:5%;
-		padding-right:5%;
+
+	/*SECTION ABOUT */
+
+	#about{
+		text-align: center;
+		vertical-align: middle;
+		color:white;
 	}
 
+	 #blocabout{
+	 	position: relative;
+		text-align: center;
+		color:white;
+		background-image:url(img/abouttedx.jpg);
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		padding:5%;
+	}
 
-	#boutonlearn{
+		#boutonlearn{
 		text-decoration: none;
 		color:white;
 	}
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+	/* FOOTER */
 
-.people-img {
-  position: relative;
-  border: 0px;
-  margin: 2%;
-  overflow: hidden;
-}
-.people-img img {
-	padding:7%;
-  max-width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.people-img:hover img {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
+	.copyright{
+		font-size: 12px;
+		color:white;
+		position:absolute;
+		bottom:0%;
+		right:2%;
+	}
 
-.partners-img {
-  position: relative;
-  border: 0px;
-  margin: 2%;
-  overflow: hidden;
-}
-.partners-img img {
-	padding:7%;
-  max-width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.partners-img:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
+	footer{
+		height: 200px;
+		background-color:black;
+		position: relative;
+	}
+
+
+	/* RESPONSIVE */
+
+	/* Extra small devices (portrait phones, less than 576px) */
+	@media (max-width: 575px) {
+		
+		body{
+			font-size: 14px;
+		}
+
+		.title{
+			font-size:20px;
+		}
+
+		.subtitle{
+			font-size:18px;
+		}
+
+		.btn{
+			font-size:14px;
+		}
+
+		h4{
+			font-size: 20px;
+		}
+
+		#tedxlogo{
+			width:100px;
+		}
+
+	}
+
+	/* Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) and (max-width: 767px) {
+		body{
+			font-size: 14px;
+		}
+
+		.title{
+			font-size:20px;
+		}
+
+		.subtitle{
+			font-size:18px;
+		}
+
+		.btn{
+			font-size:14px;
+		}
+
+		h4{
+			font-size: 20px;
+		}
+
+
+		#tedxlogo{
+			width:100px;
+		}
+	}
+
+
+	/* Medium devices (tablets, 768px and up) */
+	@media (min-width: 768px) and (max-width: 991px) { 
+		body{
+			font-size: 14px;
+		}
+
+		.title{
+			font-size:20px;
+		}
+
+		.subtitle{
+			font-size:18px;
+		}
+
+		.btn{
+			font-size:14px;
+		}
+
+		h4{
+			font-size: 20px;
+		}
+
+
+		#tedxlogo{
+			width:100px;
+		}
+
+	}
+

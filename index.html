@@ -30,9 +30,9 @@
 	<div class="container-fluid">
 
 	<header>
-		<!-- Navigation bar -->
+		<!-- NAVBAR -->
 			<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: black">
-	  			<a class="navbar-brand" href="#"><img src="img/tedxlogo.jpg" alt="tedx logo" width="200"></a>
+	  			<a class="navbar-brand" href="#"><img id="tedxlogo" src="img/tedxlogo.jpg" alt="tedx logo"></a>
 	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    			<span class="navbar-toggler-icon"></span>
 	  			</button>
@@ -71,7 +71,7 @@
 			</nav>
 
 
-		<!--header -->
+		<!--HEADER -->
 		<div class="carousel-block" id="home">
 			<!-- Texte header -->
 			<div class="header">
@@ -119,6 +119,8 @@
 		
 	</header>
 
+	<!-- SECTION EVENEMENT -->
+
 	<div class="bandeaux-rouges">
 		<p id="theevent"> The event </p>
 	</div>
@@ -129,7 +131,7 @@
 			<p> L'air de rien, beaucoup de choses peuvent se produire. Des problèmes paraissants anodins dans notre société aux sujets qui sont peu mis en lumière via les médias, en passant par des histoires de personnes aux apparences étonnantes et aux parcours incroyables. Découvrez comment, l'air de rien, beaucoup d'idées sont d'une importance capitale dans un monde en constante évolution.  </p>
 			<p> L'ère de rien, notre période contemporaine est-elle dénuée de sens et refléte-t-elle parfois le néant ? Des thèses nihilistes aux antithèses optimistes, en passant par des synthèses réalistes. Découvrez comment, l'ère de rien, peut devenir un postulat aux multiples facettes et différentes interprétations. </p>
 
-		<p class="minititle" id="talks"> Talks </p>
+		<p class="minititle"> Talks </p>
 
 		<div class="card-deck">
 			<div class="card">
@@ -194,7 +196,7 @@
 			</div>
 		</div>
 
-		<p class="minititle" id="pricing"> Pricing </p>
+		<p class="minititle"> Pricing </p>
 
 		<div class="row">
 		  <div class="col-sm-6">
@@ -215,7 +217,7 @@
 		  </div>
 		</div>
 
-		<p class="minititle" id="venueinfo"> Venue info </p>
+		<p class="minititle"> Venue info </p>
 		<p> The TEDxMinesTélécom event will occur the 19th of January at 8pm at Telecom ParisTech building. Invitations required. </p>
 
 			<p class="minititle"> Event location </p>
@@ -223,23 +225,28 @@
 			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
 
 			<div id="googlemaps" style='overflow:hidden;height:440px;width:100%;'>
-			<div id='gmap_canvas' style='height:440px;width:100%;'></div>
-			<div>
-			<small><a href="https://embedgooglemaps.com/fr/">embedgooglemaps.com/fr/</a>
-			</small>
+				<div id='gmap_canvas' style='height:440px;width:100%;'></div>
+				<div>
+					<small>
+						<a href="https://embedgooglemaps.com/fr/">embedgooglemaps.com/fr/</a>
+					</small>
+				</div>
+
+				<div>
+					<small>
+						<a href="http://notariskosten.nu/">http://www.notariskosten.nu/</a>
+					</small>
+				</div>
+
+				<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
 			</div>
-			<div>
-			<small>
-				<a href="http://notariskosten.nu/">http://www.notariskosten.nu/</a>
-			</small>
-			</div>
-			<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-			</div>
+
 			<script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(48.848213881259895,2.3553451916015833),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.848213881259895,2.3553451916015833)});infowindow = new google.maps.InfoWindow({content:'<strong>TEDxMinesTélécom</strong><br>46 rue Barrault, 75634 Paris<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-		</script>		
+			</script>
 	</div>
 
-	<!-- Organigramme de l'équipe -->
+
+	<!-- SECTION TEAM -->
 
 	<div class="bandeaux-rouges" id="theteam"> 
 		<p> The team </p>
@@ -364,6 +371,7 @@
 	</div>
 
 	<!-- ABOUT TEDX -->
+
 	<div class="bandeaux-rouges"> 
 		<p id="about"> About TEDx </p>
 	</div>
@@ -380,6 +388,8 @@
 			</button>
 		</p>
 	</div>
+
+	<!-- FOOTER -->
 
 	<footer>
 		<p class="copyright"> This independent TEDx event is operated under license from TED. Copyright 2017.</p>
