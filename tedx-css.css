@@ -320,6 +320,10 @@
 		 	padding:5%;
 		}
 
+		.boutonun{
+			margin-bottom: 3px;
+		}
+
 
 	}
 
@@ -372,6 +376,10 @@
 		 	padding:5%;
 		}
 
+		.boutonun{
+			margin-bottom: 3px;
+		}
+
 	}
 
 
@@ -422,6 +430,10 @@
 		 	height: 300px;
 		 	top: 0;
 		 	padding:5%;
+		}
+
+		.boutonun{
+			margin-bottom: 3px;
 		}
 
 
