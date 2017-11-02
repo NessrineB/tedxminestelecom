@@ -312,6 +312,11 @@
 			width:100%;
 		}
 
+		#headertext{
+		 	height: 300px;
+		 	top: 0;
+		}
+
 
 	}
 
@@ -356,6 +361,11 @@
 			width:100%;
 		}
 
+		#headertext{
+		 	height: 300px;
+		 	top: 0;
+		}
+
 	}
 
 
@@ -398,6 +408,11 @@
 			height: 100px;
 			line-height: 100px;
 			width:100%;
+		}
+
+		#headertext{
+		 	height: 300px;
+		 	top: 0;
 		}
 
 
