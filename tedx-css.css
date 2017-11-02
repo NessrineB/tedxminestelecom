@@ -306,6 +306,13 @@
 			top:65px;
 		}
 
+		.bandeaux-rouges{
+			height: 100px;
+			line-height: 100px;
+			width:100%;
+		}
+
+
 	}
 
 	/* Small devices (landscape phones, 576px and up) */
@@ -342,6 +349,13 @@
 		.carousel-block{
 			top:65px;
 		}
+
+		.bandeaux-rouges{
+			height: 100px;
+			line-height: 100px;
+			width:100%;
+		}
+
 	}
 
 
@@ -378,6 +392,12 @@
 
 		.carousel-block{
 			top:65px;
+		}
+
+		.bandeaux-rouges{
+			height: 100px;
+			line-height: 100px;
+			width:100%;
 		}
 
 
