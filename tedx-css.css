@@ -296,11 +296,11 @@
 		}
 
 		.header{
-			height: 500px;
+			height: 100%;
 		}
 
 		.carousel-block{
-			height: 500px;
+			height: 100%;
 		}
 
 	}
@@ -333,11 +333,11 @@
 		}
 
 		.header{
-			height: 500px;
+			height: 100%;
 		}
 
 		.carousel-block{
-			height: 500px;
+			height: 100%;
 		}
 	}
 
@@ -370,11 +370,11 @@
 		}
 
 		.header{
-			height: 500px;
+			height: 100%;
 		}
 
 		.carousel-block{
-			height: 500px;
+			height: 100%;
 		}
 
 
