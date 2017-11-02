@@ -77,6 +77,7 @@
 
 	 .carousel-block {
 	 	position: relative;
+	 	top:100px;
 	 } 
 
 	/*TITRES SECTIONS */
@@ -87,6 +88,8 @@
 		line-height: 200px;
 		width:100%;
 		background-size: cover;
+		z-index:20;
+		position: relative;
 	}
 
 	/* SECTION EVENEMENT */
